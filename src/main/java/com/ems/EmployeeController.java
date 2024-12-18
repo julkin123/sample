@@ -13,7 +13,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import io.swagger.v3.oas.annotations.parameters.RequestBody;
-@CrossOrigin("*")
+@CrossOrigin("http://refreshing-reverence-production.up.railway.app")
 @RestController
 @RequestMapping("/api")
 public class EmployeeController {
