@@ -7,12 +7,12 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
 @Configuration
-public class SwaggerConfig {
+public class SpringDocConfig {
 
     @Bean
-     OpenAPI customOpenAPI() {
+    public OpenAPI customOpenAPI() {
         return new OpenAPI()
-                .addServersItem(new Server().url("https://your-domain.com"))
+                .addServersItem(new Server().url("https://aware-empathy-production.up.railway.app"))
                 .info(new Info().title("API").version("1.0"));
     }
 }
